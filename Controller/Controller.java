@@ -6,14 +6,14 @@ import View.View;
 
 import java.util.Scanner;
 
-// Создаем экземпляры классов и передаем на печать
+
 public class Controller {
-    //    Создал фабрику игрушек
+   
     private final IToysFabric fabricToys = new ToysFabric();
-    //    Упаковка в бокс
+    
     private final IContainer container = new Container();
     private final ICustomToy customToy = new CustomToy();
-    //    Создали бокс на основе приоритетной очереди
+   
     private IBox box = new Box();
     private IBox box1 = new Box();
 
