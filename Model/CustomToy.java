@@ -14,7 +14,7 @@ public class CustomToy<T extends Toy> implements ICustomToy {
     private String name;
     private int weightToy;
 
-    // Генератор игрушек
+ 
     public List<Toy> getCustomToy() {
 
         String str = "";
@@ -24,8 +24,7 @@ public class CustomToy<T extends Toy> implements ICustomToy {
             addName();
             addWeight(3);
 
-            System.out.println("Продолжим? введите - нет, если нет \nили любой" +
-                    "другой непустой символ для продолжения: ");
+            System.out.println("Если хотите закончить напишите - нет,Для продолжения любой другой символ. ");
             str = scanner.next();
         }
 
@@ -38,7 +37,7 @@ public class CustomToy<T extends Toy> implements ICustomToy {
         return toyList;
     }
 
-    // Проверка строки на число, что бы не падала программа
+    
     private static boolean checkString(String str) {
         try {
             Integer.parseInt(str);
